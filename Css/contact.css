@@ -1,0 +1,52 @@
+*:root {
+    --Main--color: #04aa6d; /* Huvudfärg */
+    --Se--color: #2c9c77; /* Annan färg */
+}
+
+.contact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 60vw;
+}
+
+.from {
+    width: 80%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Target, allt som är text */
+  input[type='text'],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* Anpassa storlek endast vertical */
+  }
+  
+  /* Target knapp */
+  input[type='submit'] {
+    background-color: var(--Main--color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type='submit']:hover {
+    background-color: var(--Se--color);
+  }
